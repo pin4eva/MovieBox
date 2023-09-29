@@ -1,0 +1,32 @@
+@import "./variables";
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,300&display=swap");
+@import "./button";
+@import "./header";
+@import "./home.scss";
+
+body {
+  font-family: "DM Sans", sans-serif;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+// helpers
+
+.container {
+  width: 100%;
+  max-width: 1031px;
+  margin: auto;
+
+  @media screen and (min-width: 768px) {
+    padding-inline: 1rem;
+  }
+}

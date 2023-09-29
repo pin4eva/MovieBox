@@ -1,0 +1,11 @@
+.btn {
+  all: unset;
+  display: flex;
+  padding: 0.375rem 1rem;
+  border-radius: 0.375rem;
+
+  &.btn-rose {
+    background-color: $rose;
+    color: white;
+  }
+}

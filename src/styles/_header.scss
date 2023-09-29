@@ -1,0 +1,47 @@
+.header {
+  nav {
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      img {
+        width: 50px;
+        height: 50px;
+        margin-right: 1.5rem;
+      }
+      span {
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 24px;
+      }
+    }
+
+    .search {
+      border: 2px solid #d1d5db;
+      width: 100%;
+      max-width: 50%;
+      border-radius: 6px;
+      display: flex;
+      padding: 6px 10px;
+      align-items: center;
+      input {
+        flex: 1;
+        border: none;
+        background: transparent;
+        padding-inline: 0.5rem;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    .sign-in {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

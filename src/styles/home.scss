@@ -1,0 +1,82 @@
+#home {
+  .home {
+    &-hero {
+      color: white;
+      background: url("/src/assets/john_wick.png");
+      background-size: cover;
+      background-position: center;
+      min-height: 60vh;
+
+      .text-content {
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &_inner {
+          max-width: 404px;
+
+          h1 {
+            font-size: 3rem;
+            line-height: 56px;
+            margin: 0;
+          }
+
+          .hero-rating {
+            display: flex;
+            gap: 34px;
+            margin-block: 16px;
+            font-weight: 400;
+            font-size: 12px;
+
+            .imdb,
+            .tomatoes {
+              display: flex;
+              align-items: center;
+              img {
+                height: 17px;
+                margin-right: 10px;
+              }
+            }
+          }
+          p {
+            font-weight: 500;
+            line-height: 18px;
+          }
+
+          .btn-rose {
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 14px;
+
+            gap: 8px;
+          }
+        }
+      }
+    }
+
+    // Featured movies
+
+    &-featured-movies {
+      background-color: red;
+      margin-top: 7vh;
+      h1 {
+        margin-bottom: 44px;
+      }
+
+      .grid {
+        display: grid;
+        @media screen and (min-width: 768px) {
+          grid-template-columns: repeat(4, 1fr);
+          gap: 80px;
+        }
+
+        .box {
+          height: 100px;
+          margin-bottom: 1rem;
+          background-color: green;
+        }
+      }
+    }
+  }
+}
